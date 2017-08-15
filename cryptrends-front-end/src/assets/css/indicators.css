@@ -1,0 +1,55 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+}
+
+.indicator-holder {
+  width: 300px;
+  height:300px;
+}
+
+.indicator {
+  background: white;
+  width: 270px;
+  height: 60px;
+  border-radius: 130px;
+  border: 2px;
+  box-shadow: 10px 9px 1px 1px #000000;
+  position:relative;
+  margin: 15px;
+}
+
+.indicator-icon-div {
+  float:left;
+  height: 100%;
+  width: 33.3%;
+  position: absolute;
+}
+
+.indicator-icon {
+  width: 45px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.indicator-score-div {
+  float:right;
+  width: 66.7%;
+  position:absolute;
+  right: 0px;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translateY(-50%); /* child now centers itself relative to the midline based on own contents */
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Matrix(Dx=0,Dy=0)'; /*IE8 */
+  filter: progid:DXImageTransform.Microsoft.Matrix(Dx=0,Dy=0); /*IE6, IE7*/
+  transform: translateY(-50%);
+}
+
