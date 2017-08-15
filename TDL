@@ -1,0 +1,17 @@
+V get google trends data for past hour
+V create Table to fit the format
+V format google trends data to fit into Table rows
+V put in table
+
+
+- create models for existing table
+- query from table
+- serve as HTTP and use template to show 20 last scores
+
+
+timezone??
+
+
+
+
+GREAT SUCCESS
