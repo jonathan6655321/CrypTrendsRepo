@@ -1,8 +1,10 @@
-from django.shortcuts import get_object_or_404, render
-from django.http import HttpResponse
-from .models import GoogleTrends
+from django.utils.decorators import method_decorator
+from key_indicators.models import GoogleTrends
+from key_indicators.serializers import GoogleTrendsSerializer
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework import generics, permissions
 
-# 89
-def hello(request):
-    first_score = GoogleTrends.objects.all().order_by('-timestamp')[:1]
-    return HttpResponse(str(first_score[0].score))
+
+class GoogleTrendsList(generics.ListCreateAPIView):
+    queryset = GoogleTrends.objects.order_by('-timestamp')[:1]
+    serializer_class = GoogleTrendsSerializer

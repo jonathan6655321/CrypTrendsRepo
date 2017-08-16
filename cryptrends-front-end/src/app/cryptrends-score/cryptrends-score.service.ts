@@ -7,7 +7,8 @@ export class CryptrendsScoreService {
     private googleTrendsService: GoogleTrendsService,
   ) {}
 
-  getCryptrendsScore(): number {
-    return (this.googleTrendsService.getPercentageDiff() / 200 ) * 10 ;
+  getCryptrendsScore(): Promise<number> {
+    return  this.googleTrendsService.getPercentageDiff()
+      .then(response => (response / 200 ) * 10 );
   }
 }

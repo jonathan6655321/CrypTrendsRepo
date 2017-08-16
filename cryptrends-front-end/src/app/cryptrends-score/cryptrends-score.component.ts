@@ -18,6 +18,7 @@ export class CryptrendsScoreComponent extends IndicatorComponent implements OnIn
   iconPath = '../../assets/img/cryptrends-icon.svg';
 
   ngOnInit(): void {
-    this.score = this.cryptendsScoreService.getCryptrendsScore().toString();
+    this.cryptendsScoreService.getCryptrendsScore()
+      .then(data => this.score = data.toString())
   }
 }

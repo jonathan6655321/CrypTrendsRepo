@@ -16,6 +16,7 @@ export class GoogleTrendsComponent extends IndicatorComponent implements OnInit 
 
   iconPath = '../../assets/img/google-icon.svg';
   ngOnInit(): void {
-    this.score = this.googleTrendsService.getPercentageDiff().toString() + '%';
+    this.googleTrendsService.getPercentageDiff()
+      .then(data => this.score = data.toString() + '%');
   }
 }
