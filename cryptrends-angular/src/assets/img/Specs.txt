@@ -1,0 +1,10 @@
+Colors:
+
+
+Green - 80ca00 #
+Red -  #c90000
+
+Grey - #282828
+
+
+Font: Myriad Pro Size 14
