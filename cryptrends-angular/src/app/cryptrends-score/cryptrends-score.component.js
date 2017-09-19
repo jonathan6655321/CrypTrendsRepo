@@ -35,7 +35,7 @@ CryptrendsScoreComponent = __decorate([
     core_1.Component({
         selector: 'cryptrends-score',
         templateUrl: './app/indicator/indicator.component.html',
-        styleUrls: ['./assets/css/indicators.css']
+        styleUrls: ['./assets/css/indicators.css', './app/cryptrends-score/cryptrends-score.css']
     }),
     __metadata("design:paramtypes", [cryptrends_score_service_1.CryptrendsScoreService])
 ], CryptrendsScoreComponent);

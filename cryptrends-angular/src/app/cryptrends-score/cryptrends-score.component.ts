@@ -6,7 +6,7 @@ import {CryptrendsScoreService} from './cryptrends-score.service';
 @Component({
   selector: 'cryptrends-score',
   templateUrl: './app/indicator/indicator.component.html',
-  styleUrls: ['./assets/css/indicators.css']
+  styleUrls: ['./assets/css/indicators.css', './app/cryptrends-score/cryptrends-score.css']
 })
 
 export class CryptrendsScoreComponent extends IndicatorComponent implements OnInit{

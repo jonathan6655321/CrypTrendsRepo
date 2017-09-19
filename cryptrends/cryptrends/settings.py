@@ -25,7 +25,7 @@ SECRET_KEY = 'wb8@-eq4@a_eua#l(+3uoup%)&x-lzsndx^iz@z)7u60!@kcd-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -54,6 +54,8 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',  # mine from here:
     'django.middleware.common.CommonMiddleware',
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ORIGIN_WHITELIST = (
     'localhost:4200',
